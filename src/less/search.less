@@ -1,0 +1,95 @@
+@media screen and (max-width: 600px) {
+	body#search {
+		margin: 0;
+		.first_container {
+			width: 415px;
+			height: 221px;
+			background-image: url('../../images/search/first_container.png');
+			position: relative;
+			p {
+				position: absolute;
+				bottom: 40px;
+				font-size: 14px;
+				padding: 0px 50px;
+			}
+			img {
+				position: absolute;
+				bottom: 50px;
+				right: 50px;
+			}
+		}
+		.plat {
+			position: relative;
+			padding-left: 40px;
+			&:after {
+				content: 'MON PLAT';
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 40px;
+				color: #F5F5F5;
+				font-weight: 700;
+				position: absolute;
+				left: 50px;
+				z-index: -1;
+				bottom: -6px;
+			}
+		}
+		.budget {
+			position: relative;
+			padding-left: 40px;
+			margin-top: 35px;
+			&:after {
+				content: 'MON BUDGET';
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 40px;
+				color: #F5F5F5;
+				font-weight: 700;
+				position: absolute;
+				left: 50px;
+				z-index: -1;
+				bottom: -6px;
+			}
+		}
+		.gamme {
+			background-color: #F5F5F5;
+
+			width: 85%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			>p {
+				font-size: 18px;
+				color: #666666;
+				padding-left: 10px;
+				margin: 0 0 10px 0;
+			}
+			>div {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+				>div {
+
+					p {
+						text-align: center;
+						font-size: 14px;
+						color: #666666;
+					}
+					>div {
+						background-color: #FFF;
+						-webkit-box-shadow: 0px 3px 43px -19px #000000;
+						-moz-box-shadow: 0px 3px 43px -19px #000000;
+						box-shadow: 0px 3px 43px -19px #000000;
+						border-radius: 5px;
+						height: 75px;
+						width: 75px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+		}
+
+	}
+}

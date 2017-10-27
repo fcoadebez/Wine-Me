@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 '<%= dirs.srcLessPath %>/main.less',
                 '<%= dirs.srcLessPath %>/login.less',
                 '<%= dirs.srcLessPath %>/new_account.less',
-                '<%= dirs.srcLessPath %>/home.less',
+                '<%= dirs.srcLessPath %>/search.less',
                 ],
                 dest: '<%= dirs.srcCssPath %>/',
                 expand: true,
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-       less: {
+     less: {
         files: '<%= dirs.srcLessPath %>/*.less',
         tasks: [ 'less', 'autoprefixer', 'concat' ]
     },

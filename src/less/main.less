@@ -1,5 +1,128 @@
 @media screen and (max-width: 600px) {
 	body {
+		h2 {
+			font-size: 20px;
+			color: #666666;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 400;
+		}
+		header {
+			background: #951932; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(#951932, #810F47); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#951932, #810F47); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#951932, #810F47); /* For Firefox 3.6 to 15 */
+			// background: url("../../images/header/home_logo.png"), linear-gradient(#951932, #810F47); /* Standard syntax */
+			background-repeat: no-repeat;
+			background-position: 30px;
+			position: relative;
+			height: 174px;
+			.logo {
+				position: absolute;
+				top: 0;
+				left: 30px;
+			}
+			.nav {
+				position: relative;
+				top: 40px;
+				h1 {
+					font-family: "chaparral-pro";
+					float: left;
+					color: #FFF;
+					font-size: 26px;
+					margin-left: 20px;
+					position: relative;
+					top: 5px;
+				}
+				ul {
+					margin-right: 20px;
+					float: right;
+					a {
+						text-decoration: none;
+					}
+					li {
+						list-style: none;
+						margin: 10px;
+						display: inline-block;
+						&.active {
+							img {
+								opacity: 0.7;
+							}
+						}
+					}
+				}
+			}
+			.subnav {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				ul {
+					padding: 0;
+					
+					li {
+						display: inline-block;
+						width: 31%;
+						position: relative;
+						&.active {
+							&:nth-child(1) {
+								a {
+									font-size: 18px;
+									&:before {
+										content: '';
+										display: block;
+										position: absolute;
+										width: 20px;
+										left: 20px;
+										bottom: -3px;
+										width: 20px;
+										height: 1px;
+										background-color: #FFF;
+									}
+								}
+							}
+							&:nth-child(2) {
+								a {
+									font-size: 18px;
+									&:before {
+										content: '';
+										display: block;
+										position: absolute;
+										width: 20px;
+										left: 3px;
+										bottom: -3px;
+										width: 20px;
+										height: 1px;
+										background-color: #FFF;
+									}
+								}
+							}
+							&:nth-child(3) {
+								a {
+									font-size: 18px;
+									&:before {
+										content: '';
+										display: block;
+										position: absolute;
+										width: 20px;
+										left: 17px;
+										bottom: -3px;
+										width: 20px;
+										height: 1px;
+										background-color: #FFF;
+									}
+								}
+							}
+
+						}
+						a {
+							text-decoration: none;
+							font-size: 14px;
+							color: #FFF;
+						}
+					}
+				}
+			}
+		}
 		.container {
 			width: 425px;
 			margin: 0 auto;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<title>Wine & Me</title>
+
+	<script src="https://use.typekit.net/yue1bof.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+	<link href="dist/css/main.css" rel="stylesheet">
+	<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="src/noUiSlider.10.0.0/nouislider.min.css">
+	<script src="src/noUiSlider.10.0.0/nouislider.min.js" type="text/javascript"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="dist/js/main.js" type="text/javascript"></script>
+</head>
+<body id="search">
+	<div class="container">
+		<header>
+			<img class="logo" src="images/header/home_logo.png">
+			<div class="nav">
+				<h1>Wine&Me</h1>
+				<ul>
+					<a href="#"><li class="active">
+						<img src="images/header/icon_search.png">
+					</li></a>
+					<a href="#"><li>
+						<img src="images/header/icon_fav.png">
+					</li></a>
+					<a href="#"><li>
+						<img src="images/header/icon_account.png">
+					</li></a>
+				</ul>
+			</div>
+			<div class="subnav">
+				<ul>
+					<li class="active">
+						<a href="#">Avec un plat</a>
+					</li>
+					<li class="">
+						<a href="#">Toutes occasions</a>
+					</li>
+					<li class="">
+						<a href="#">Avec un nom</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="first_container">
+			<p>
+				Nous te proposons les meilleurs vins selon ton profil.
+				Pour cela, nous avons besoin de connaître tes goûts.
+				Dis-nous ce que tu aimes !
+			</p>
+			<a href="#">
+				<img src="images/search/chevron.png">
+			</a>
+		</div>
+		<div class="h2">
+			<h2 class="plat">MON PLAT</h2>
+		</div>
+		<div class="gamme">
+			<p>Viande</p>
+			<div>
+				<div>
+					<div>
+						<img src="images/search/charcuterie.png">
+					</div>
+					<p>Charcuterie</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/volaille.png">
+					</div>
+					<p>Volaille</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/gibier.png">
+					</div>
+					<p>Gibier</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/boeuf.png">
+					</div>
+					<p>Boeuf</p>
+				</div>
+			</div>
+		</div>
+		<div class="gamme">
+			<p>Poisson</p>
+			<div>
+				<div>
+					<div>
+						<img src="images/search/coquillage.png">
+					</div>
+					<p>Coquillage</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/crustace.png">
+					</div>
+					<p>Crustacé</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/maigre.png">
+					</div>
+					<p>Maigre</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/gras.png">
+					</div>
+					<p>Gras</p>
+				</div>
+			</div>
+		</div>
+		<div class="gamme">
+			<p>Fromage</p>
+			<div>
+				<div>
+					<div>
+						<img src="images/search/doux.png">
+					</div>
+					<p>Doux</p>
+				</div>
+				<div>
+					<div>
+						<img src="images/search/corse.png">
+					</div>
+					<p>Corsé</p>
+				</div>
+			</div>
+		</div>
+		<div class="h2">
+			<h2 class="budget">MON BUDGET</h2>
+		</div>
+		<div id="test-slider"></div>
+		
+	</div>
+	<script type="text/javascript">
+		var slider = document.getElementById('test-slider');
+		noUiSlider.create(slider, {
+			start: [20, 80],
+			connect: true,
+			step: 1,
+		   orientation: 'horizontal', // 'horizontal' or 'vertical'
+		   range: {
+		   	'min': 0,
+		   	'max': 100
+		   },
+		   format: wNumb({
+		   	decimals: 0
+		   })
+		});
+	</script>
+</body>
+</html>
