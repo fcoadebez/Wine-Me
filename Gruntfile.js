@@ -24,16 +24,9 @@ module.exports = function(grunt) {
             files: [{
                 src: [
                 '<%= dirs.srcLessPath %>/main.less',
-                '<%= dirs.srcLessPath %>/vertical.less',
-                '<%= dirs.srcLessPath %>/contact.less',
-                '<%= dirs.srcLessPath %>/esprit.less',
-                '<%= dirs.srcLessPath %>/gamme-detail.less',
-                '<%= dirs.srcLessPath %>/gammes.less',
-                '<%= dirs.srcLessPath %>/questions.less',
-                '<%= dirs.srcLessPath %>/question-detail.less',
-                '<%= dirs.srcLessPath %>/recettes.less',
-                '<%= dirs.srcLessPath %>/recette-detail.less',
-                '<%= dirs.srcLessPath %>/trio-bienfaits.less',
+                '<%= dirs.srcLessPath %>/login.less',
+                '<%= dirs.srcLessPath %>/new_account.less',
+                '<%= dirs.srcLessPath %>/home.less',
                 ],
                 dest: '<%= dirs.srcCssPath %>/',
                 expand: true,
@@ -89,7 +82,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-     less: {
+       less: {
         files: '<%= dirs.srcLessPath %>/*.less',
         tasks: [ 'less', 'autoprefixer', 'concat' ]
     },
