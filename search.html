@@ -63,104 +63,120 @@
 				<img src="images/search/chevron.png">
 			</a>
 		</div>
-		<div class="h2">
-			<h2 class="plat">MON PLAT</h2>
-		</div>
-		<div class="gamme">
-			<p>Viande</p>
-			<div>
+		<div class="page aliments">
+			<div class="h2">
+				<h2 class="plat">MON PLAT</h2>
+			</div>
+			<div class="gamme">
+				<p>Viande</p>
 				<div>
 					<div>
-						<img src="images/search/charcuterie.png">
+						<div>
+							<img src="images/search/charcuterie.png">
+						</div>
+						<p>Charcuterie</p>
 					</div>
-					<p>Charcuterie</p>
-				</div>
-				<div>
 					<div>
-						<img src="images/search/volaille.png">
+						<div>
+							<img src="images/search/volaille.png">
+						</div>
+						<p>Volaille</p>
 					</div>
-					<p>Volaille</p>
-				</div>
-				<div>
 					<div>
-						<img src="images/search/gibier.png">
+						<div>
+							<img src="images/search/gibier.png">
+						</div>
+						<p>Gibier</p>
 					</div>
-					<p>Gibier</p>
-				</div>
-				<div>
 					<div>
-						<img src="images/search/boeuf.png">
+						<div>
+							<img src="images/search/boeuf.png">
+						</div>
+						<p>Boeuf</p>
 					</div>
-					<p>Boeuf</p>
 				</div>
 			</div>
-		</div>
-		<div class="gamme">
-			<p>Poisson</p>
-			<div>
+			<div class="gamme">
+				<p>Poisson</p>
 				<div>
 					<div>
-						<img src="images/search/coquillage.png">
+						<div>
+							<img src="images/search/coquillage.png">
+						</div>
+						<p>Coquillage</p>
 					</div>
-					<p>Coquillage</p>
-				</div>
-				<div>
 					<div>
-						<img src="images/search/crustace.png">
+						<div>
+							<img src="images/search/crustace.png">
+						</div>
+						<p>Crustacé</p>
 					</div>
-					<p>Crustacé</p>
-				</div>
-				<div>
 					<div>
-						<img src="images/search/maigre.png">
+						<div>
+							<img src="images/search/maigre.png">
+						</div>
+						<p>Maigre</p>
 					</div>
-					<p>Maigre</p>
-				</div>
-				<div>
 					<div>
-						<img src="images/search/gras.png">
+						<div>
+							<img src="images/search/gras.png">
+						</div>
+						<p>Gras</p>
 					</div>
-					<p>Gras</p>
-				</div>
-			</div>
-		</div>
-		<div class="gamme">
-			<p>Fromage</p>
-			<div>
-				<div>
-					<div>
-						<img src="images/search/doux.png">
-					</div>
-					<p>Doux</p>
-				</div>
-				<div>
-					<div>
-						<img src="images/search/corse.png">
-					</div>
-					<p>Corsé</p>
 				</div>
 			</div>
+			<div class="gamme">
+				<p>Fromage</p>
+				<div>
+					<div>
+						<div>
+							<img src="images/search/doux.png">
+						</div>
+						<p>Doux</p>
+					</div>
+					<div>
+						<div>
+							<img src="images/search/corse.png">
+						</div>
+						<p>Corsé</p>
+					</div>
+				</div>
+			</div>
+			<div class="h2">
+				<h2 class="budget">MON BUDGET</h2>
+			</div>
+			<div class="slider-container">
+				<p>Fourchette de prix</p>
+				<div id="test-slider"></div>
+			</div>
+			<a href="#" class="button">
+				<div class="button-container">
+					TROUVER MON VIN
+				</div>
+			</a>
 		</div>
-		<div class="h2">
-			<h2 class="budget">MON BUDGET</h2>
+		<div class="page alone">
+			<div class="h2">
+				<h2 class="vin">UN VIN SELON MES GOÛTS</h2>
+			</div>
+			<div class="gamme">
+
+			</div>
 		</div>
-		<div id="test-slider"></div>
 		
 	</div>
 	<script type="text/javascript">
 		var slider = document.getElementById('test-slider');
 		noUiSlider.create(slider, {
-			start: [20, 80],
+			start: [5, 30],
 			connect: true,
 			step: 1,
+			tooltips: true,
 		   orientation: 'horizontal', // 'horizontal' or 'vertical'
 		   range: {
 		   	'min': 0,
 		   	'max': 100
 		   },
-		   format: wNumb({
-		   	decimals: 0
-		   })
 		});
 	</script>
 </body>
